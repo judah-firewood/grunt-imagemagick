@@ -45,7 +45,7 @@ var HisrcCommand={
       this.path=fpath.substr(0,lslash+1);
       this.ext=fpath.substr(ldot+1);
       this.name=fpath.substr(lslash+1,ldot-lslash-1);
-      this.im=require('node-imagemagick');
+      this.im=require('imagemagick');
       this.callback=fcallback;
 
       this.im.identify(['-format','%wx%h',this.file],proxy(this.resize,this));
@@ -92,7 +92,7 @@ var HisrcCommand={
 /**
 * ResizeCommand
 * resizes the specified images or groups of images using the specified parameters
-* currently uses the same properties as node-imagemagick 
+* currently uses the same properties as imagemagick 
 **/
 var ResizeCommand={
   props:undefined,
@@ -106,7 +106,7 @@ var ResizeCommand={
     this.props.dstPath=pto;
     this.callback=pcallback;
     this.context=pcontext;
-    this.im=require('node-imagemagick');
+    this.im=require('imagemagick');
 
     grunt.log.write('resizing:'+this.props.srcPath+"...\n");
     this.im.resize(this.props,proxy(this.complete,this));
@@ -131,7 +131,7 @@ var ConvertCommand={
     this.args=pArgs;
     this.callback=pCallback;
     this.context=pContext;
-    this.im=require('node-imagemagick');
+    this.im=require('imagemagick');
 
     grunt.log.write('convert: '+this.args+"...\n");
     this.im.convert(this.args,proxy(this.complete,this));
