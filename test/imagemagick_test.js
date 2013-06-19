@@ -52,7 +52,7 @@ exports['imagemagick'] = {
         }
       });
       grunt.loadTasks('tasks');
-      grunt.task.run('imagemagick-hisrc imagemagick-resize imagemagick-convert');
+      grunt.task.run(['imagemagick-hisrc', 'imagemagick-resize', 'imagemagick-convert']);
       test.ok(true,"Works");
     }catch(e){
       test.ok(false,"Broken:["+e+"]");
