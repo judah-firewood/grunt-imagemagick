@@ -29,11 +29,14 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "grunt": "~0.3.17"
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.4.4"
   },
-  "dependencies":{
-    "path":">= 0.0.1",
-    "node-imagemagick":""
+  "dependencies": {
+    "path": ">= 0.0.1",
+    "imagemagick": ""
   },
   "keywords": [
     "gruntplugin"
