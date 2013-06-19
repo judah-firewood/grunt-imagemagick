@@ -9,10 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/icagstrout/grunt-imagemagick.git"
+    "url": "https://github.com/rsanchez/grunt-imagemagick.git"
   },
   "bugs": {
-    "url": "https://github.com/icagstrout/grunt-imagemagick/issues"
+    "url": "https://github.com/rsanchez/grunt-imagemagick/issues"
   },
   "licenses": [
     {
